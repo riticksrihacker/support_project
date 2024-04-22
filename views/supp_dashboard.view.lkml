@@ -240,7 +240,7 @@ END AS business_minutes_diff_resolve
 
   measure: average_or_percentile_acknowledgement {
     type: number
-    label_from_parameter: perc_choice
+    # label_from_parameter: perc_choice
     sql:
         {% if perc_choice._parameter_value == 'average' %}
         ${average_minutes_to_acknowledgement}
@@ -285,7 +285,7 @@ END AS business_minutes_diff_resolve
 
   measure: average_or_percentile_mitigation {
     type: number
-    label_from_parameter: perc_choice
+    # label_from_parameter: perc_choice
     sql:
         {% if perc_choice._parameter_value == 'average' %}
         ${average_minutes_to_mitigation}
@@ -330,7 +330,7 @@ END AS business_minutes_diff_resolve
 
   measure: average_or_percentile_resolution {
     type: number
-    label_from_parameter: perc_choice
+    # label_from_parameter: perc_choice
     sql:
         {% if perc_choice._parameter_value == 'average' %}
         ${average_minutes_to_resolution}
